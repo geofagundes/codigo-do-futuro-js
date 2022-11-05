@@ -1,0 +1,35 @@
+João Roberto é dono de um armazem que vende produtos de limpeza
+ele precisa de um programa que solicite os valores do almejante, sabaoEmPo, sabonete
+
+Faça um programa que solicite também o nome do cliente
+e no final do programa mostre o valor 
+total da compra (soma dos valores dos produtos almejante, sabaoEmPo, sabonete)
+feita por este cliente
+o valor total é a soma das variáveis listadas acima
+
+Exemplo: Olá Fulano
+o valor de sua compra é de:
+12231312
+
+
+<script>
+	alert("Qual o seu nome?")
+	nome = prompt()
+	
+	alert("Qual o preço do alvejante?")
+	alvejante = prompt()
+	alvejante = parseInt(alvejante)
+
+	alert("Qual o preço do sabão em pó?")
+	sabaoEmPo = prompt()
+	sabaoEmPo = parseInt(sabaoEmPo)
+	
+	alert("Qual o preço do sabonete?")
+	sabonete = prompt()
+	sabonete = parseInt(sabonete)
+
+	valorCompra = alvejante + sabaoEmPo + sabonete
+
+	alert(`Olá ${nome}\nO valor da sua compra é R$ ${valorCompra}`)
+
+</script>
