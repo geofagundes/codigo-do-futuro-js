@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5</title>
+</head>
+<body>
+    <script>
+        //Fabiana é uma pessoa indecisa e precisa juntar dinheiro para conseguir em suas férias viajar
+        //Ela terá algumas opções a escolher com os seus respectivos valores
+
+        //Disney - R$ 15000.00
+        //Madri - R$ 12000.00
+        //Maceió - R$ 8000.00
+        //Ribeirão Preto - R$ 5000.00
+
+        // Faça um programa que solicite o nome do usuário
+        // O valor que o usuário tem para o usuário
+        // A viagem que o usuário deseja 
+        // Mostre no final do programa se ele pode ou não viajar
+        // Se ele não puder viajar, mostre o quanto falta para o mesmo economizar.
+
+        var nome = prompt("Qual o seu nome?")
+        var valor = parseFloat(prompt("Qual o valor que você possui?"))
+        var destino = parseInt(prompt(`Qual o destino que você deseja?  
+        1 - Disney 
+        2 - Madri 
+        3 -  Maceió 
+        4 - Ribeirão Preto`))
+
+        var valorViagem = 0
+
+        switch (destino){
+            case 1:
+                valorViagem = 15000.00
+            break;
+
+            case 2:
+                valorViagem = 12000.00
+            break;
+
+            case 3:
+                valorViagem = 8000.00
+            break;
+
+            case 4:
+                valorViagem = 5000.00
+            break;
+        }
+
+        if (valorViagem < 1){
+            alert("Opção de Viagem Inválida")
+        }
+
+        var restoValor = valor - valorViagem
+        if(restoValor <0){
+            alert(`${nome}, infelizmente você não irá conseguir viajar, pois falta R$${restoValor*(-1)} `)
+        } else {
+            alert(`Parabéns, ${nome}, você conseguirá viajar e ainda sobrou R$${restoValor}`)
+        }
+
+        
+    </script>
+</body>
+</html>
